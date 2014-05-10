@@ -29,6 +29,7 @@ then
 	rm -f /tmp/create_user.lock
 	exit 1
 fi
+echo "user & pubkey okay"
 
 cd $WORKING_REPOSITORY
 if [ -f keydir/$username.pub ];
