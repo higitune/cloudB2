@@ -2,7 +2,7 @@
 INSTANCE_DIR="/home/cloud/instances"
 
 ## HTTP Load Balancer
-HTTP_LB="mgmt@http-load-balancer"
+HTTP_LB="cloud@157.82.3.180"
 
 ## FQDN
 fqdn=`cat $INSTANCE_DIR/$REPOSITORY.fqdn`
