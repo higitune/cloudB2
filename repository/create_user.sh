@@ -29,7 +29,6 @@ then
 	rm -f /tmp/create_user.lock
 	exit 1
 fi
-echo "user & pubkey okay"
 
 cd $WORKING_REPOSITORY
 if [ -f keydir/$username.pub ];
@@ -37,6 +36,7 @@ then
 	echo "Error: User already exists."
 	exit 1
 fi
+echo "$ssh_public_key"
 echo "$ssh_public_key" > keydir/$username.pub
 git add keydir/$username.pub
 git commit -m "Add $username."
